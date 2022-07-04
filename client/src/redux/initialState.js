@@ -31,7 +31,16 @@ const initialState = {
       author: 'John Doe',
     }
   ],
-  searchString: 'i',
+
+  searchString: '',
+
+  user: [
+    {
+      loggedIn: false,
+      email: ''
+    }
+  ]
+
 };
 
 export default initialState;

@@ -3,10 +3,12 @@ import { createStore, combineReducers } from 'redux';
 
 import postsReducer from './postsRedux';
 import searchStringReducer from './searchStringRedux';
+import userReducer from './userRedux';
 
 const subreducers = {
   posts: postsReducer,
-  searchString: searchStringReducer
+  searchString: searchStringReducer,
+  user: userReducer,
 };
 
 const reducer = combineReducers(subreducers);
